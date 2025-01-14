@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Import Freight Enquiry Form</title>
+    <link rel="stylesheet" href="ImportFreight.css">
+</head>
+<body>
+    <h1>Import Freight Enquiry Form</h1>
+    <div class="form-container">
+        <form id="freightForm">
+            <label for="importerName">Importer Name</label>
+            <input type="text" id="importerName" name="importerName" required>
+
+            <label for="contactNo">Contact No</label>
+            <input type="text" id="contactNo" name="contactNo" required>
+
+            <label for="emailId">Email ID</label>
+            <input type="email" id="emailId" name="emailId" required>
+
+            <label for="supplierName">Supplier Name</label>
+            <input type="text" id="supplierName" name="supplierName">
+
+            <label for="contactPerson">Contact Person</label>
+            <input type="text" id="contactPerson" name="contactPerson">
+
+            <label for="supplierContactNo">Supplier Contact No</label>
+            <input type="text" id="supplierContactNo" name="supplierContactNo">
+
+            <label for="supplierEmailId">Supplier Email ID</label>
+            <input type="email" id="supplierEmailId" name="supplierEmailId">
+
+            <label for="portLoading">Port of Loading</label>
+            <input type="text" id="portLoading" name="portLoading">
+
+            <label for="portDestination">Port of Destination</label>
+            <input type="text" id="portDestination" name="portDestination">
+
+            <label for="commodity">Commodity</label>
+            <input type="text" id="commodity" name="commodity">
+
+            <label for="numPackages">No of Packages</label>
+            <input type="number" id="numPackages" name="numPackages">
+
+            <label for="containerInfo">Type of Containers and Weight (GP: General Purpose; HC: High Cube; FR: Flat Rack; OT:Open Top;LCL: Less Container Load)</label>
+            <textarea id="containerInfo" name="containerInfo" placeholder="e.g., 20GP X 2 weight 30 Mts; 20HC X 2 weight 30 Mts; 40OT X 1 weight 18 Mts; 40FR X 1 weight 18 Mts;"></textarea>
+
+            <label for="exWorks">If terms are Ex Works (local transport & customs clearance required)</label>
+            <input type="text" id="exWorks" name="exWorks">
+
+            <label for="cargoAddress">Cargo Pickup Address</label>
+            <textarea id="cargoAddress" name="cargoAddress"></textarea>
+
+            <label for="cargoReadinessDate">Expected Date of Readiness of Cargo</label>
+            <input type="date" id="cargoReadinessDate" name="cargoReadinessDate">
+
+            <button type="button" class="btn-submit" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <script src="ImportFreight.js"></script>
+</body>
+</html>
